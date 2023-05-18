@@ -1,0 +1,11 @@
+---
+file: Tasks/eep.txt
+debug: 6
+
+other-files: 
+  - Tasks/shopping.txt
+
+dav-url: https://cloud.jasonquigley.com/remote.php/dav/files/jquigley/
+dav-user: jquigley
+dav-password: twb3R-fcKJA-GjRMi-dP3z5-JtB6s
+
