@@ -24,7 +24,6 @@ package tdt
 
 import (
 	"bufio"
-	"fmt"
 	"io"
 	"os"
 	"path"
