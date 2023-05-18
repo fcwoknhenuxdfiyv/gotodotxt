@@ -1,6 +1,6 @@
 # gotodotxt
 
-This is a small TUI program to manage `todo.txt` lists. Multiple lists can be added to the configuration and easily switched.
+This is a small TUI program to manage [todo.txt](http://todotxt.org/) lists. Multiple lists can be added to the configuration and easily switched.
 
 The default tasks file is "todo.txt" in the current directory. To use a different location, use the TODO_FILE environment variable.
 
