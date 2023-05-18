@@ -4,6 +4,9 @@ This is a small TUI program to manage `todo.txt` lists. Multiple lists can be ad
 
 The default tasks file is "todo.txt" in the current directory. To use a different location, use the TODO_FILE environment variable.
 
+## Here be dragons!
+Please note that I have an embarrassing number of panic statements littered through the code as I am developing it slowly when time permits. 
+
 ## Example:
 
 ```

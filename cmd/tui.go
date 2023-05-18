@@ -422,20 +422,6 @@ func tui() {
 	printOnExit = false
 	davMode = checkDavMode()
 
-	fn := viper.GetString("file")
-	_, err := os.Stat(fn)
-	if err != nil {
-		if !os.IsNotExist(err) {
-			fmt.Printf("%v", err)
-			os.Exit(1)
-		}
-		_, err := os.Create(fn)
-		if err != nil {
-			fmt.Printf("%v", err)
-			os.Exit(1)
-		}
-	}
-
 	p := tea.NewProgram(newModel(viper.GetString("file")), tea.WithAltScreen())
 	if _, err := p.Run(); err != nil {
 		fmt.Printf("%v", err)

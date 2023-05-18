@@ -24,6 +24,7 @@ package tdt
 
 import (
 	"bufio"
+	"fmt"
 	"io"
 	"os"
 	"path"
@@ -73,6 +74,19 @@ func Read(fn string, opts Opts) *TaskFile {
 	todoFile = fn
 	var err error
 	fn, err = homedir.Expand(fn)
+	if err != nil {
+		panic(err)
+	}
+	_, err = os.Stat(fn)
+	if err != nil {
+		if !os.IsNotExist(err) {
+			panic(err)
+		}
+		_, err := os.Create(fn)
+		if err != nil {
+			panic(err)
+		}
+	}
 	if err != nil {
 		panic(err)
 	}
